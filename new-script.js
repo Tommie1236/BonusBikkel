@@ -21,7 +21,6 @@ function createCard(gridDiv, cardData) {
     img: 'imgStr'
 }*/
 
-
 $.getJSON('https://www.reddit.com/r/persoonlijkebonus/.json', function(data) {
     const posts = data['data']['children'];
     const gridDiv = document.getElementById('gridDiv');
@@ -36,6 +35,5 @@ $.getJSON('https://www.reddit.com/r/persoonlijkebonus/.json', function(data) {
             cards.push(createCard(gridDiv, cardData));
         };
     };
-    getData = document.getElementById('getData');
-    getData.remove();
+    getData = document.getElementById('getData').remove();
 });
