@@ -9,8 +9,8 @@ function createCard(gridDiv, cardData) {
     cardTitle.classList.add('card-title');
     cardTitle.innerHTML = cardData.title;
 
-    cardDiv.appendChild(cardImg);
     cardDiv.appendChild(cardTitle);
+    cardDiv.appendChild(cardImg);
     gridDiv.appendChild(cardDiv);
     return cardDiv;
 };

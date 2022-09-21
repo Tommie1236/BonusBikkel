@@ -9,9 +9,9 @@
   margin: 0 0 25px 0;
 }
 .grid-container {
-  width: 600px;
+  width: 1000px;
   display: grid;
-  grid-template-columns: 190px 190px 190px;
+  grid-template-columns: 190px 190px 190px 190px 190px;
   grid-gap: 15px;
   justify-content: center;
 }
@@ -26,9 +26,10 @@
 .card-img {
   width: 186px;
   height: 190px;
-  border-radius: 13px 13px 0 0;
+  object-fit: cover;
+  border-radius: 0 0 13px 13px;
 }
 .card-title {
-  margin: 0;
+  margin: 5px 0 5px 0;
   font-weight: bold;
 }
